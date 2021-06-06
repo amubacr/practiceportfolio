@@ -142,20 +142,29 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-8">
-            <form>
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Thank you!</strong> Now we have received your message.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="submit-to-google-sheet">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="name" class="form-control" id="name" aria-describedby="name">
+                <input type="name" class="form-control" id="name" aria-describedby="name" name="name">
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email">
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea class="form-control" id="message" rows="3" name="message"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Send</button>
+              <button type="submit" class="btn btn-primary btn-send">submit</button>
+
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
@@ -172,5 +181,24 @@
 
     <!-- Bootstrap Bundle with pooper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Javascript Contact form -->
+    <!-- <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycby3lqDHa-coUYkjtJbxsDSn2pCmCr8hInR22oMP--lfm3VgtS2evGCWuf7lRgLr3tBIMg/exec'
+      const form = document.forms['submit-to-google-sheet'];
+      const btnSend = document.querySelector['.btn-send'];
+      const btnLoad = document.querySelector['.btn-loading'];
+      const myAlert = document.querySelector['.my-alert'];
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        btnLoad.classList.toggle('d-none');
+        btnSend.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script> -->
+
   </body>
 </html>
