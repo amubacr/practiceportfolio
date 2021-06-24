@@ -1,0 +1,7 @@
+pic-4 : Photo by <a href="https://unsplash.com/@liacastelli?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marília Castelli</a> on <a href="https://unsplash.com/s/photos/arduino-uno?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+pic-5 : Photo by <a href="https://unsplash.com/@ahmedatef19?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ahmed Atef</a> on <a href="https://unsplash.com/s/photos/gaming-computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Attention 1: Hai people yang berkunjung di web ini. Perkenalkan nama saya Ahmat Framuja, owner dari web portfolio ini dan sekaligus owner dari instagram amubacraft._ dan saya adalah seorang pelajar alias siswa jadi ini adalah web porfolio pertama dan mungkin bukan portfolio resmi ya....
+
+Attention 2: Ini adalah portfolio hasil dari video tutorial Web Programming Unpas dan masih belum sepenuhnya jadi (Tutorial Practice web development).
